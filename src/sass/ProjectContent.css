@@ -1,0 +1,19 @@
+.project-content{
+    margin : 20px;
+}
+
+.project-content-header {
+    display : block;
+}
+.project-content-header-items{
+    display : inline-block;
+}
+
+.project-title{
+    margin-right : 50%;
+}
+
+.disabled-link{
+    pointer-events: none;
+    color : red;
+}

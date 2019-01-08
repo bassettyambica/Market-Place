@@ -1,0 +1,32 @@
+.project-info-display {
+    margin : 10px;
+    width : 80%;
+    margin : 0 auto;
+    justify-content: center;
+}
+
+.bid-item {
+    border: 1px solid grey;
+    height : auto;
+    width : 50em;
+}
+
+.hide-final-price {
+    display : none;
+}
+
+.bid-item-info {
+    display : block;
+}
+
+.bid-item-info-child {
+    display : inline-block;
+}
+
+.bid-item-info-right{
+    justify-content: center;
+}
+
+.bid-item-label{
+    font-weight: bold;
+}

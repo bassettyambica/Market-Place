@@ -1,0 +1,11 @@
+.project-details-page{
+    margin : 20px;
+}
+
+.show-bid-form {
+    display : block;
+}
+
+.hide-bid-form {
+    display : none;
+}
