@@ -9,6 +9,7 @@ class ProjectDetails extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            showBidForm: false,
             priceType : 'hourly',
             bidDetails : {
                 'bidderName' : '',
@@ -24,7 +25,7 @@ class ProjectDetails extends Component {
     }
 
     toggleBidPost = () => {
-        this.props.toggleBidForm();
+        this.setState({ showBidForm : !this.state.showBidForm });
     }
 
     handleBidEntryDetails = e => {
@@ -58,14 +59,14 @@ class ProjectDetails extends Component {
 
     render () {
         const { selectedProject } = this.props || {};
-        const showPostBidForm = this.props && this.props.showBidForm ? `show-bid-form` : `hide-bid-form`;
-        if(!selectedProject) { return <div>Loading..</div>}
+        const showPostBidForm = this.state.showBidForm ? `show-bid-form` : `hide-bid-form`;
+        if(!selectedProject) { return null}
 
         const checkDateValidity = validateBidEligibility(selectedProject.projectDeadline.endDate, selectedProject.projectDeadline.endTime);
 
         return (
             <div className='project-details-page'>
-                <Link to='/'>Back</Link>
+                <Link className='link-button' to='/'>Back</Link>
                 {/* CSS : Convert show bid button to slider */}
                 <button className='waves-effect waves-light btn right' disabled={!checkDateValidity} onClick={() => this.toggleBidPost()}>Bid</button>
 

@@ -36,16 +36,16 @@ class ProjectContentInfo extends Component {
       <div className="project-info-display">
         <p>{selectedProject.projectInfo.projectDesc}</p>
         <div>
-          <lable className="bid-item-label"> Bid End Date : </lable>
+          <label className="bid-item-label"> Bid End Date : </label>
           {selectedProject.projectDeadline.endDate}
         </div>
         <div>
-          <lable className="bid-item-label"> Bid End Time Type : </lable>
+          <label className="bid-item-label"> Bid End Time : </label>
           {selectedProject.projectDeadline.endTime}
         </div>
         <div className={showFinalBidPrice}>
           <div>
-            <lable className="bid-item-label"> Final bid price : $</lable>
+            <label className="bid-item-label"> Final bid price : $</label>
             {this.getFinalBidPrice(bidsList, selectedProject)}
           </div>
         </div>
@@ -76,19 +76,19 @@ const BidList = ({ bid } = this.props) => {
           <li key={post.bidID} className="bid-item">
             <div className="bid-item-info">
               <div>
-                <lable className="bid-item-label">Bid Price : </lable>
+                <label className="bid-item-label">Bid Price : </label>
                 {post.bidPrice}
               </div>
               <div>
-                <lable className="bid-item-label"> Bid Price Type : </lable>
+                <label className="bid-item-label"> Bid Price Type : </label>
                 {post.bidPriceType}
               </div>
               <div>
-                <lable className="bid-item-label">Name : </lable>
+                <label className="bid-item-label">Name : </label>
                 {post.bidderDetails.bidderName}
               </div>
               <div>
-                <lable className="bid-item-label"> Contact : </lable>
+                <label className="bid-item-label"> Contact : </label>
                 {post.bidderDetails.bidderContact}
               </div>
             </div>

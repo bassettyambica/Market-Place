@@ -3,8 +3,7 @@ import { projectList } from '../utils/constants';
 import { fetchProjectContent, addProjectToList } from '../utils/utils';
 
 const INITIAL_STATE = {
-    projectList,
-    selectedProject: {}
+    projectList
 };
 
 export default function (state = INITIAL_STATE, action) {

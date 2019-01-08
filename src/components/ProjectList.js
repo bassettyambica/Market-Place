@@ -6,6 +6,16 @@ import ProjectContent from './ProjectContent';
 
 class ProjectList extends Component {
 
+    static get defaultProps() {
+        return {
+            selectedProject: {
+                projectInfo : {
+                    projectID: ''
+                }
+            }
+        }
+    }
+
     componentDidMount = () => {
         this.props.fetchProject(this.props.projects[0].projectInfo.projectID);
     }
@@ -15,11 +25,11 @@ class ProjectList extends Component {
     }
 
     render() {
-        const selectProjectID = (this.props.selectedProject && this.props.selectedProject.projectInfo) ? this.props.selectedProject.projectInfo.projectID : '';
+        const selectProjectID = this.props.selectedProject.projectInfo.projectID;
 
         return (
             <div>
-                <Link className='add-new-button' to='/project/new'>Add New Project</Link>
+                <Link className='add-new-button link-button' to='/project/new'>Add New Project</Link>
                 <div className='project-list'>
                 <div className='project-list-item-left'>
                     <ul className="project-list-items">

@@ -1,7 +1,12 @@
-.post-new-project-container {
-    border : 1px solid grey;
-}
-
 .post-new-project {
     margin : 2%;
+}
+
+.fields-error{
+    margin : 2%;
+    color : red; 
+}
+
+.error-fields{
+    border: 2px solid #ff45006e;
 }

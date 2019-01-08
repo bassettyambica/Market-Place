@@ -9,7 +9,6 @@ class ProjectContent extends Component {
 
     constructor(props) {
         super(props);
-        console.log("contetn props", props )
         this.state = {
             loading: true
         };
@@ -24,7 +23,7 @@ class ProjectContent extends Component {
         const { loading } = this.state;
         const { selectedProject } = this.props || {};
 
-        if (loading) { return <div> Loading... </div> };
+        if (loading) { return <div className='loading-indicator'> Loading... </div> };
         const checkDateValidity = validateBidEligibility(selectedProject.projectDeadline.endDate, selectedProject.projectDeadline.endTime);
         const disableAddBid = checkDateValidity ? '' : 'disabled-link';
 
@@ -33,13 +32,13 @@ class ProjectContent extends Component {
             <div className='project-content'>
                 <div className='project-content-header'>
                     <div className='project-content-header-items project-title'>
-                        <h5><Link to={projectLink}>{selectedProject.projectInfo.projectTitle}</Link></h5>
+                        <h5><Link  className='link-button' to={projectLink}>{selectedProject.projectInfo.projectTitle}</Link></h5>
                     </div>
 
 
                     {/* Work on this logic to route to progect page and show bid form */}
                     {/* <div className='project-content-header-items'>
-                        <Link to={projectLink} className='waves-effect waves-light btn right' className={disableAddBid}>Bid Project</Link>
+                        <Link to={projectLink} className='link-button' className={disableAddBid}>Bid Project</Link>
                     </div> */}
                 </div>
 

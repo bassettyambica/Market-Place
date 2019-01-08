@@ -6,12 +6,8 @@ class ProjectCreate extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            projectDetails : {
-                'projectTitle' : '',
-                'projectDesc' : '',
-                'endDate' : '',
-                'endTime' : ''
-            }
+            projectDetails: {},
+            errors: {}
         };
     }
 
@@ -20,58 +16,72 @@ class ProjectCreate extends Component {
         const { projectDetails } = this.state;
         switch (e.target.name) {
             case 'projecttitle': projectDetails.projectTitle = e.target.value;
-                return;
+                break;
             case 'projectdesc': projectDetails.projectDesc = e.target.value;
-                return;
+                break;
             case 'projectenddate': projectDetails.endDate = e.target.value;
-                return;
+                break;
             case 'projectendtime': projectDetails.endTime = e.target.value;
-                return;
-            default: return;    
+                break;
+            default: return;
         }
     }
 
     handlePostProject = () => {
         const { projectDetails } = this.state;
-        this.props.addNewProject(projectDetails);
-        this.setState({projectDetails : {}});
-        this.props.history.push('/');
+        if (this.handleValidation()) {
+            this.props.addNewProject(projectDetails);
+            this.setState({ projectDetails: {} });
+            this.props.history.push('/');
+        }
     }
 
+    handleValidation() {
+        let { projectDetails } = this.state;
+        let errors = {};
+        let formIsValid = true;
+
+        if (!projectDetails.projectTitle || !projectDetails.endDate || !projectDetails.endTime || !projectDetails.projectDesc) {
+            formIsValid = false;
+            errors.fieldsError = "Please fill required details";
+        }
+
+        this.setState({ errors: errors });
+        return formIsValid;
+    }
+
+
     render() {
+        const { errors } = this.state;
+        const validateField = errors.fieldsError ? 'error-fields' : '';
+
         return (
             <div>
-                <Link to="/">Back</Link>
-                <h5>Post new project</h5>
+                <Link className='link-button' to="/">Back</Link>
+
+                <div className='fields-error'>{errors.fieldsError}</div>
+
                 <div className='post-new-project-container'>
                     <div className='post-new-project'>
 
-                        <div className="row">
-                            <div className="input-field col s3">
-                                <input type="text" className="validate" name='projecttitle' onChange={e => this.handleEntryDetails(e)} />
-                                <label className="active">Project Title</label>
-                            </div>
+                        <div>
+                            <label>Project Title</label>
+                            <input type="text" name='projecttitle' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div className="row">
-                            <div className="input-field col s6">
-                                <textarea type="text" className="validate" name='projectdesc' onChange={e => this.handleEntryDetails(e)} />
-                                <label className="active">Project Desc</label>
-                            </div>
+                        <div>
+                            <label>Project Desc</label>
+                            <textarea name='projectdesc' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div className="row">
-                            <div className="input-field col s3">
-                                <input type="date" className="validate" name='projectenddate' onChange={e => this.handleEntryDetails(e)} />
-                                <label className="active">Project End Date</label>
-                            </div>
+                        <div>
+                            <label>Project End Date</label>
+                            <input type="date" name='projectenddate' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div className="row">
-                            <div className="input-field col s3">
-                                <input type="time" className="validate" name='projectendtime' onChange={e => this.handleEntryDetails(e)} />
-                                <label className="active">Project End Time</label>
-                            </div>
+                        <div>
+                            <label>Project End Time</label>
+                            <input type="time" name='projectendtime' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
 
