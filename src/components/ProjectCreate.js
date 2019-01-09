@@ -79,9 +79,10 @@ class ProjectCreate extends Component {
         const validateField = Object.keys(errors).length > 0 ? 'error-fields' : '';
 
         return (
-            <div>
+            <div className='project-create-page'>
+            <div className='project-create-content'>
                 <Link className='link-button' to="/">Back</Link>
-
+                <h1>Add New Project</h1>
                 <div className='fields-error'>
                     {Object.keys(errors).map((error, ind) => {
                         return (
@@ -121,7 +122,8 @@ class ProjectCreate extends Component {
 
                     </div>
                 </div>
-                <button className="waves-effect waves-light btn" onClick={() => this.handlePostProject()}>Submit</button>
+                <button className="submit-new-project" onClick={() => this.handlePostProject()}>Submit</button>
+                </div>
             </div>
 
         );

@@ -17,7 +17,8 @@ class ProjectDetails extends Component {
                 'bidderContact' : '',
                 'bidPriceType' : 'hourly',
                 'bidPrice' : ''
-            }
+            },
+            errors : {}
         };
     }
 
@@ -45,10 +46,49 @@ class ProjectDetails extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const { bidDetails } = this.state;
+        const { bidDetails, showBidForm } = this.state;
         bidDetails.projectID = this.props.match.params.id;
         //Todo Bid Form Validation
-        this.props.addNewBid(bidDetails);
+        if (this.handleValidation()) {
+            this.props.addNewBid(bidDetails);
+            this.setState({
+                showBidForm: !showBidForm,
+                bidDetails: {
+                    'bidderName': '',
+                    'bidderContact': '',
+                    'bidPriceType': 'hourly',
+                    'bidPrice': ''
+                }
+            });
+        }
+    }
+
+    handleValidation() {
+        let { bidDetails } = this.state;
+        let errors = {};
+        let formIsValid = true;
+
+        if (!bidDetails.bidderName) {
+            formIsValid = false;
+            errors.bidderName = "Name is required";
+        }
+
+        if (!bidDetails.bidderContact || !bidDetails.bidderContact.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)) {
+            formIsValid = false;
+            errors.bidderContact = "Please fill a valid phone number";
+        }
+
+        if (!bidDetails.bidPrice) {
+            formIsValid = false;
+            errors.bidPrice = "Please fill a valid price";
+        }
+
+        this.setState({ errors: errors });
+        return formIsValid;
+    }
+
+    handleFormClose = () => {
+        this.setState({ showBidForm: !this.state.showBidForm });
     }
 
     handlePriceTypeChange = e => {
@@ -59,8 +99,8 @@ class ProjectDetails extends Component {
 
     render () {
         const { selectedProject } = this.props || {};
-        const showPostBidForm = this.state.showBidForm ? `show-bid-form` : `hide-bid-form`;
-        //const flatHourlyText = (this.state.bidDetails.bidPriceType === 'hourly') ? 'price-rate' : 'flat-rate';
+        const { errors, showBidForm } = this.state;
+        const showPostBidForm = showBidForm ? `show-bid-form` : `hide-bid-form`;
         if(!selectedProject) { return null}
 
         const checkDateValidity = validateBidEligibility(selectedProject.projectDeadline.endDate, selectedProject.projectDeadline.endTime);
@@ -68,11 +108,21 @@ class ProjectDetails extends Component {
 
         return (
             <div className='project-details-page'>
+            <div className='project-content'>
                 <Link className='link-button' to='/'>Back</Link>
                 {/* CSS : Convert show bid button to slider */}
                 <button className={disableButtonCSS} disabled={!checkDateValidity} onClick={() => this.toggleBidPost()}>Bid</button>
 
-                <div className={showPostBidForm}>
+                <div className={`${showPostBidForm} bid-form-modal`}>
+                <div className='bid-modal-content'>
+
+                    <div className='fields-error'>
+                        {Object.keys(errors).map((error, ind) => {
+                            return (
+                                <p key={ind}>{errors[error]}</p>
+                            )
+                        })}
+                    </div>
                     <div>
                         <label>Name</label>
                         <input type='text' name='biddername' onChange={e => this.handleBidEntryDetails(e)}/>
@@ -96,9 +146,11 @@ class ProjectDetails extends Component {
                         <input type='text' name='bidprice' onChange={e => this.handleBidEntryDetails(e)}/>
                     </div>
 
-                     <button onClick={(e) => this.handleSubmit(e)}>Post Bid</button>   
+                     <button onClick={(e) => this.handleSubmit(e)}>Post Bid</button>  
+                     <button className="close" onClick={() => this.handleFormClose()}>Close</button> 
+                     </div>
                 </div>
-                <div className='project-content'>
+
                      <ProjectContentInfo selectedProject={selectedProject} bidsList={this.props.bidsList} checkDateValidity={checkDateValidity}/>
                      <BidList selectedProject={selectedProject} bidsList={this.props.bidsList}/>
                 </div>

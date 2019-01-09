@@ -27,7 +27,8 @@ class ProjectList extends Component {
         const selectProjectID = this.props.selectedProject.projectInfo.projectID;
 
         return (
-            <div>
+            <div className='project-list-container'>
+            <div className='project-list-block'>
                 <Link className='add-new-button link-button' to='/project/new'>Add New Project</Link>
                 <div className='project-list'>
                 <div className='project-list-item-left'>
@@ -50,6 +51,7 @@ class ProjectList extends Component {
                     <ProjectContent selectedProject={this.props.selectedProject} bidsList={this.props.bidsList}/>
                 </div>
 
+            </div>
             </div>
             </div>
             
