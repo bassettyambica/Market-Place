@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../sass/ProjectDetails.css';
 import ProjectContentInfo from './ProjectContentInfo';
+import BidList from './BidList';
 import { validateBidEligibility } from '../utils/utils';
 
 class ProjectDetails extends Component {
@@ -98,6 +99,7 @@ class ProjectDetails extends Component {
                      <button onClick={(e) => this.handleSubmit(e)}>Post Bid</button>   
                 </div>
                 <ProjectContentInfo selectedProject={selectedProject} bidsList={this.props.bidsList} checkDateValidity={checkDateValidity}/>
+                <BidList selectedProject={selectedProject} bidsList={this.props.bidsList}/>
             </div>
         )
     }

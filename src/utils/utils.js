@@ -59,7 +59,7 @@ export function validateBidEligibility(endDate, endTime) {
     return (currentDate <= calcDate) ? true : false;
 
 }
-
+// returns bid with lowest bid price (based on hourly and flat rate) from the list of bids for a project 
 export function getFinalBidPrice(bidsList, selectedProject) {
     let minPrice = 0;
     let bidderName = '';
@@ -85,3 +85,31 @@ export function getFinalBidPrice(bidsList, selectedProject) {
         bidderName
     };
 };
+
+export function validateInputFields(type, val) {
+    let error = '', reGex;
+    console.log('val, type =>',  type)
+    switch (type) {
+        case 'numeric':
+            reGex = new RegExp(/^\d+$/);
+            error = !reGex.test(val) ? `should be a number` : '';
+            break;
+        case 'string':
+            reGex = new RegExp(/^[a-z][a-z.\s-]$/i);
+            error = !reGex.test(val) ? `should be only letters` : '';
+            break;
+        case 'date':
+            reGex = new RegExp(/^\d{4}[./-]\d{2}[./-]\d{2}$/);
+            error = !reGex.test(val) ? `should be in format xxxx/xx/xx` : '';
+            break;
+
+        case 'phone':
+            reGex = new RegExp(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
+            error = !reGex.test(val) ? `should be in fomrat XXX-XXX-XXXX` : '';
+            break;
+
+        default: return error;
+    }
+
+    return error;
+}

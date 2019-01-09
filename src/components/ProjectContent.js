@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types'
 import '../sass/ProjectContent.css';
 import ProjectContentInfo from './ProjectContentInfo';
 import { validateBidEligibility } from '../utils/utils';
@@ -47,9 +46,6 @@ class ProjectContent extends Component {
             </div>
         )
     }
-
-    
-
 }
 
 export default ProjectContent;

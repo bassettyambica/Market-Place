@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../sass/ProjectCreate.css';
 import { Link } from 'react-router-dom';
+import { validateInputFields } from '../utils/utils';
 
 class ProjectCreate extends Component {
     constructor(props) {
@@ -43,10 +44,30 @@ class ProjectCreate extends Component {
         let errors = {};
         let formIsValid = true;
 
-        if (!projectDetails.projectTitle || !projectDetails.endDate || !projectDetails.endTime || !projectDetails.projectDesc || !projectDetails.projectHours) {
+        if(!projectDetails.projectTitle || projectDetails.projectTitle.match(/^([a-z0-9]{3,})$/)){
             formIsValid = false;
-            errors.fieldsError = "Please fill required details";
-        }
+            errors.projectTitle = "Title is required";
+         }
+
+         if(!projectDetails.projectDesc){
+            formIsValid = false;
+            errors.projectDesc = "Description Cannot be empty";
+         }
+
+         if(!projectDetails.endDate || !projectDetails.endDate.match(/^\d{4}[./-]\d{2}[./-]\d{2}$/)){
+            formIsValid = false;
+            errors.endDate = "Please select a valid date";
+         }
+
+         if(!projectDetails.endTime){
+            projectDetails.endTime = '00:00';
+         }
+
+         if(!projectDetails.projectHours || !projectDetails.projectHours.match(/^\d+$/)){
+            formIsValid = false;
+            errors.projectHours = "Est Hours is required and must be a number";
+         }
+ 
 
         this.setState({ errors: errors });
         return formIsValid;
@@ -55,13 +76,19 @@ class ProjectCreate extends Component {
 
     render() {
         const { errors } = this.state;
-        const validateField = errors.fieldsError ? 'error-fields' : '';
+        const validateField = Object.keys(errors).length > 0 ? 'error-fields' : '';
 
         return (
             <div>
                 <Link className='link-button' to="/">Back</Link>
 
-                <div className='fields-error'>{errors.fieldsError}</div>
+                <div className='fields-error'>
+                    {Object.keys(errors).map((error, ind) => {
+                        return (
+                            <p key={ind}>{errors[error]}</p>
+                        )
+                    })}
+                </div>
 
                 <div className='post-new-project-container'>
                     <div className='post-new-project'>

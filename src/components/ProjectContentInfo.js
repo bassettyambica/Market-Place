@@ -6,7 +6,6 @@ class ProjectContentInfo extends Component {
 
   render() {
     const selectedProject = this.props ? this.props.selectedProject : {};
-    const bidsList = this.props ? this.props.bidsList : [];
     // const checkDateValidity = this.props ? this.props.checkDateValidity : null;
     const showFinalBidPrice =
       this.props && this.props.checkDateValidity
@@ -16,6 +15,7 @@ class ProjectContentInfo extends Component {
 
     return (
       <div className="project-info-display">
+        <h1 className='project-title'>{selectedProject.projectInfo.projectTitle} </h1>
         <p>{selectedProject.projectInfo.projectDesc}</p>
         <div>
           <label className="bid-item-label"> Project Estimated Hours : </label>
@@ -35,54 +35,9 @@ class ProjectContentInfo extends Component {
             {`${finalBidDetails.minPrice} by ${finalBidDetails.bidderName}`}
           </div>
         </div>
-
-        <div>
-          {bidsList &&
-            bidsList.map(bid => {
-              if (bid.projectID === selectedProject.projectInfo.projectID) {
-                return (
-                  <ul key={bid.projectID} className="collection">
-                    <BidList bid={bid} selectedProject={selectedProject} />
-                  </ul>
-                );
-              }
-              return null;
-            })}
-        </div>
       </div>
     );
   }
 }
-
-const BidList = ({ bid } = this.props) => {
-  return (
-    <div>
-      {bid.bidPosts.map(post => {
-        return (
-          <li key={post.bidID} className="bid-item">
-            <div className="bid-item-info">
-              <div>
-                <label className="bid-item-label">Bid Price : </label>
-                {'$'+post.bidPrice}
-              </div>
-              <div>
-                <label className="bid-item-label"> Bid Price Type : </label>
-                {post.bidPriceType}
-              </div>
-              <div>
-                <label className="bid-item-label">Name : </label>
-                {post.bidderDetails.bidderName}
-              </div>
-              <div>
-                <label className="bid-item-label"> Contact : </label>
-                {post.bidderDetails.bidderContact}
-              </div>
-            </div>
-          </li>
-        );
-      })}
-    </div>
-  );
-};
 
 export default ProjectContentInfo;
