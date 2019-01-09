@@ -60,6 +60,11 @@ button:focus,
   cursor: pointer;
 }
 
+label{
+  font-weight: 300;
+  color: #7f7f7f;
+}
+
 /* @media (min-width: 400px) {
   .container{
     width: 100%;

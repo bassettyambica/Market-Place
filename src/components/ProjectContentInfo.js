@@ -15,7 +15,9 @@ class ProjectContentInfo extends Component {
 
     return (
       <div className="project-info-display">
-        <h1 className='project-title'>{selectedProject.projectInfo.projectTitle} </h1>
+        <div>
+           <h2 className='project-title'>{selectedProject.projectInfo.projectTitle} </h2>
+        </div>
         <p>{selectedProject.projectInfo.projectDesc}</p>
         <div>
           <label className="bid-item-label"> Project Estimated Hours : </label>

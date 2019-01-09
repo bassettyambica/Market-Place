@@ -1,15 +1,15 @@
 import { uuidv4 } from './utils';
 
-export const projectList = [
+export const projectList1 = [
     {
         "projectInfo": {
             "projectID": "1",
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python.",
+            "projectTitle": "Marketing Specialist",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
             "projectHours": "50"
         },
         "projectDeadline": {
-            "endDate": "2018-10-19",
+            "endDate": "2019-10-19",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -19,8 +19,8 @@ export const projectList = [
     {
         "projectInfo": {
             "projectID": "2",
-            "projectTitle": "Software Developer",
-            "projectDesc": `This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis..Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,`,
+            "projectTitle": "Social Media Assistant",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
             "projectHours": "70" 
         },
         "projectDeadline": {
@@ -34,8 +34,9 @@ export const projectList = [
     {
         "projectInfo": {
             "projectID": "3",
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives.",
+            "projectTitle": "Media Buyer",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
             "projectHours": "30"
         },
         "projectDeadline": {
@@ -111,12 +112,13 @@ export const bidsList = [
     }
 ]
 
-export const projectList1 = [
+export const projectList = [
     {
         "projectInfo": {
             "projectID": "1",
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Marketing Specialist",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -129,8 +131,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": "2",
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Social Media Assistant",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -143,8 +146,10 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": "3",
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "Media Buyer",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
             "endDate": "2018-06-12",
@@ -157,8 +162,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Brand Strategist",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -171,8 +177,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Media Relations Coordinator",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -185,11 +192,13 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "SEO Manage",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2019-06-12",
+            "endDate": "2018-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -199,8 +208,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Travel Agent",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -213,8 +223,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Front Desk Manager",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -227,11 +238,13 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "Group Sales",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2019-06-12",
+            "endDate": "2018-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -241,8 +254,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Event Planner",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -255,8 +269,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Social Media Assistant",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -269,11 +284,13 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "Hotel Receptionist",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2019-06-12",
+            "endDate": "2018-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -283,8 +300,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Technical Writer",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -297,8 +315,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Public Relations Specialist",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -311,11 +330,13 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "Proposal Writer",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2019-06-12",
+            "endDate": "2018-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -325,8 +346,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Video Game Writer",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -339,8 +361,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Social Media Assistant",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -353,11 +376,13 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "Copywriter",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2019-06-12",
+            "endDate": "2018-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -367,8 +392,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
+            "projectTitle": "Travel Writer",
+            "projectDesc": `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non consectetur a erat. Nunc faucibus a pellentesque sit. In aliquam sem fringilla ut. Sagittis orci a scelerisque purus semper eget duis at. Mattis nunc sed blandit libero. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Aliquet bibendum enim facilisis gravida. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna ac placerat vestibulum lectus. Sit amet aliquam id diam maecenas ultricies mi eget. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Sollicitudin tempor id eu nisl nunc mi ipsum. Donec ac odio tempor orci dapibus ultrices in iaculis. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Eget nunc scelerisque viverra mauris in aliquam. Enim tortor at auctor urna nunc id cursus metus. Feugiat vivamus at augue eget arcu dictum varius duis. Morbi tristique senectus et netus.`,
+            "projectHours": "50"
         },
         "projectDeadline": {
             "endDate": "2019-10-19",
@@ -381,8 +407,9 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
+            "projectTitle": "Social Media Assistant",
+            "projectDesc": `Eget egestas purus viverra accumsan in nisl. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Ut tristique et egestas quis ipsum suspendisse. Ac auctor augue mauris augue. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Cursus metus aliquam eleifend mi in. Leo vel fringilla est ullamcorper eget nulla. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. At consectetur lorem donec massa sapien faucibus et molestie. Ipsum suspendisse ultrices gravida dictum fusce ut. Gravida in fermentum et sollicitudin ac orci phasellus. Duis ultricies lacus sed turpis. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Ut etiam sit amet nisl purus in mollis.`,
+            "projectHours": "70" 
         },
         "projectDeadline": {
             "endDate": "2019-03-15",
@@ -395,263 +422,13 @@ export const projectList1 = [
     {
         "projectInfo": {
             "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
+            "projectTitle": "Ghostwriter",
+            "projectDesc": `In nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquam sem fringilla ut morbi tincidunt augue. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Velit ut tortor pretium viverra suspendisse. Sit amet commodo nulla facilisi nullam vehicula ipsum. Vel pharetra vel turpis nunc eget lorem dolor sed. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Diam quis enim lobortis scelerisque fermentum dui faucibus. Convallis aenean et tortor at risus viverra adipiscing. Bibendum neque egestas congue quisque egestas diam in arcu cursus. Vitae purus faucibus ornare suspendisse sed. Cras adipiscing enim eu turpis egestas. In fermentum posuere urna nec. Massa tempor nec feugiat nisl pretium fusce. Neque convallis a cras semper auctor neque vitae tempus quam. Convallis posuere morbi leo urna molestie.
+                            Sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Sagittis vitae et leo duis ut diam quam nulla. Est velit egestas dui id ornare arcu odio ut sem. Condimentum lacinia quis vel eros donec ac odio. Magna eget est lorem ipsum. Ullamcorper morbi tincidunt ornare massa. Enim nunc faucibus a pellentesque sit. Orci ac auctor augue mauris augue. Odio euismod lacinia at quis risus sed vulputate odio ut.`,
+            "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2019-06-12",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
-        },
-        "projectDeadline": {
-            "endDate": "2019-10-19",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
-        },
-        "projectDeadline": {
-            "endDate": "2019-03-15",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
-        },
-        "projectDeadline": {
-            "endDate": "2019-06-12",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
-        },
-        "projectDeadline": {
-            "endDate": "2019-10-19",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
-        },
-        "projectDeadline": {
-            "endDate": "2019-03-15",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
-        },
-        "projectDeadline": {
-            "endDate": "2019-06-12",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
-        },
-        "projectDeadline": {
-            "endDate": "2019-10-19",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
-        },
-        "projectDeadline": {
-            "endDate": "2019-03-15",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
-        },
-        "projectDeadline": {
-            "endDate": "2019-06-12",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
-        },
-        "projectDeadline": {
-            "endDate": "2019-10-19",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
-        },
-        "projectDeadline": {
-            "endDate": "2019-03-15",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
-        },
-        "projectDeadline": {
-            "endDate": "2019-06-12",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
-        },
-        "projectDeadline": {
-            "endDate": "2019-10-19",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
-        },
-        "projectDeadline": {
-            "endDate": "2019-03-15",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
-        },
-        "projectDeadline": {
-            "endDate": "2019-06-12",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Engineer",
-            "projectDesc": "Experience/Education: This journeyman labor category has 3 to 10 years of experience and a BA/BS degree in a relevant degree field, such as math, science, statistics, or engineering. A Journeyman-level person typically performs all functional duties independently. Six years’ additional work experience may be substituted for a bachelor’s degree. Associate degree plus 4 years’ additional work experience may be substituted for a bachelor’s degree. Desired experience and demonstrated proficiency with relational databases, SQL, Adobe ColdFusion, HTML, CSS, and JavaScript, R, and Python."
-        },
-        "projectDeadline": {
-            "endDate": "2019-10-19",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Software Developer",
-            "projectDesc": "This position will be responsible for the design and development of new software applications for the City while ensuring compliance with development standards, reducing redundancy to improve the City’s overall efficiency, performing regular maintenance and upgrades for the City’s existing software and web applications and creating reports to meet technical and business need using Crystal, SSRS or other available tools. Knowledge of PHP, .NET, Powershell, SQL, API’s and HTML5 technologies preferred. A Bachelor’s degree in Computer Science or other related field is required, along with a minimum of 5 years experience in systems programming/analysis." 
-        },
-        "projectDeadline": {
-            "endDate": "2019-03-15",
-            "endTime": "23:00"
-        },
-        "projectBids": {
-            "bidsCount": "0"
-        }
-    },
-    {
-        "projectInfo": {
-            "projectID": uuidv4(),
-            "projectTitle": "Systems Analyst",
-            "projectDesc": "looking for someone who’s genuinely passionate about finance and the investment industries to research, analyze and write. The Investment Analyst will work closely with their resident investment experts, researching from macro, technical, fundamental and sentiment perspectives."
-        },
-        "projectDeadline": {
-            "endDate": "2019-06-12",
+            "endDate": "2018-06-12",
             "endTime": "23:00"
         },
         "projectBids": {

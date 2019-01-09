@@ -30,11 +30,6 @@ class ProjectContent extends Component {
         return (
             <div className='project-content'>
                 <div className='project-content-header'>
-                    <div className='project-content-header-items project-title'>
-                        <h5><Link  className='link-button' to={projectLink}>{selectedProject.projectInfo.projectTitle}</Link></h5>
-                    </div>
-
-
                     {/* Bid form Link on home page project description */}
                     {/* <div className='project-content-header-items'>
                         <Link to={projectLink} className='link-button' className={disableAddBid}>Bid Project</Link>
@@ -43,6 +38,9 @@ class ProjectContent extends Component {
 
 
                 <ProjectContentInfo selectedProject={selectedProject} bidsList={this.props.bidsList} checkDateValidity={checkDateValidity}/>
+                <div className='project-content-header-items project-title'>
+                    <h5><Link  className='link-button' to={projectLink}>Click Here To Bid</Link></h5>
+                </div>
             </div>
         )
     }
