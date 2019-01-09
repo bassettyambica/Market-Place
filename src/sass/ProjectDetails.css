@@ -1,5 +1,16 @@
-.project-details-page{
-    margin : 20px;
+.project-details-page {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    background: #eaeaea;
+}
+
+.project-content {
+    z-index: 10;
+    width: 80%;
+    background: #ffff;
+    margin: 0 auto;
 }
 
 .show-bid-form {
@@ -12,4 +23,8 @@
 
 .disabled-bid-button {
     background-color: #ff45006e;
+}
+
+.project-info-display {
+    width: 80%;
 }

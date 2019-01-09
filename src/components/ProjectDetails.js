@@ -98,8 +98,11 @@ class ProjectDetails extends Component {
 
                      <button onClick={(e) => this.handleSubmit(e)}>Post Bid</button>   
                 </div>
-                <ProjectContentInfo selectedProject={selectedProject} bidsList={this.props.bidsList} checkDateValidity={checkDateValidity}/>
-                <BidList selectedProject={selectedProject} bidsList={this.props.bidsList}/>
+                <div className='project-content'>
+                     <ProjectContentInfo selectedProject={selectedProject} bidsList={this.props.bidsList} checkDateValidity={checkDateValidity}/>
+                     <BidList selectedProject={selectedProject} bidsList={this.props.bidsList}/>
+                </div>
+
             </div>
         )
     }

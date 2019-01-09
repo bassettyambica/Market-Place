@@ -5,32 +5,10 @@
     justify-content: center;
 }
 
-.bid-item {
-    border: 1px solid grey;
-    height : auto;
-    width : 50em;
-}
-
 .hide-final-price {
     display : none;
 }
 
 .show-final-price{
     color : red;
-}
-
-.bid-item-info {
-    display : block;
-}
-
-.bid-item-info-child {
-    display : inline-block;
-}
-
-.bid-item-info-right{
-    justify-content: center;
-}
-
-.bid-item-label{
-    font-weight: bold;
 }

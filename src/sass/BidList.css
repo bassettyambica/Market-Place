@@ -1,0 +1,24 @@
+.bid-list{
+    width : 100%;
+    padding: 0px;
+}
+
+.bid-item {
+    width: 100%;
+    /* border-radius: 3px; */
+        /* box-shadow: 0 2px 0 0 #d4d7dc; */
+    border-top: 1px solid #c2c2c2;
+    background-color: #ffff;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bid-item-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #26a69a;
+}
+.bid-container {
+    width: 80%;
+    margin: 0 auto;
+}
