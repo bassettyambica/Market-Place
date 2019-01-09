@@ -10,11 +10,11 @@ class ProjectDetails extends Component {
         super(props);
         this.state = {
             showBidForm: false,
-            priceType : 'hourly',
+           
             bidDetails : {
                 'bidderName' : '',
                 'bidderContact' : '',
-                'bidPriceType' : '',
+                'bidPriceType' : 'hourly',
                 'bidPrice' : ''
             }
         };
@@ -33,45 +33,45 @@ class ProjectDetails extends Component {
         const { bidDetails } = this.state;
         switch (e.target.name) {
             case 'biddername': bidDetails.bidderName = e.target.value;
-                return;
+                break;
             case 'biddercontact': bidDetails.bidderContact = e.target.value;
-                return;
-            case 'bidprice': bidDetails.bidPrice = e.target.value + '$';
-                return;
+                break;
+            case 'bidprice': bidDetails.bidPrice = e.target.value;
+                break;
             default: return;    
         }
     }
 
     handleSubmit = (e) => {
         e.preventDefault();
-        //Bid Price Type validation ? revisit this logic
-        const { bidDetails, priceType } = this.state;
-        bidDetails.bidPriceType = priceType
+        const { bidDetails } = this.state;
         bidDetails.projectID = this.props.match.params.id;
+        //Todo Bid Form Validation
         this.props.addNewBid(bidDetails);
-        //Reset values to empty
     }
 
     handlePriceTypeChange = e => {
-        console.log('handlePriceTypeChange', e.target.value)
-        this.setState({ priceType : e.target.value})
+        const { bidDetails } = this.state;
+        bidDetails.bidPriceType = e.target.value;
+        this.setState({ bidDetails });
     }
 
     render () {
         const { selectedProject } = this.props || {};
         const showPostBidForm = this.state.showBidForm ? `show-bid-form` : `hide-bid-form`;
+        //const flatHourlyText = (this.state.bidDetails.bidPriceType === 'hourly') ? 'price-rate' : 'flat-rate';
         if(!selectedProject) { return null}
 
         const checkDateValidity = validateBidEligibility(selectedProject.projectDeadline.endDate, selectedProject.projectDeadline.endTime);
+        const disableButtonCSS = checkDateValidity ?  '' : 'disabled-bid-button';
 
         return (
             <div className='project-details-page'>
                 <Link className='link-button' to='/'>Back</Link>
                 {/* CSS : Convert show bid button to slider */}
-                <button className='waves-effect waves-light btn right' disabled={!checkDateValidity} onClick={() => this.toggleBidPost()}>Bid</button>
+                <button className={disableButtonCSS} disabled={!checkDateValidity} onClick={() => this.toggleBidPost()}>Bid</button>
 
                 <div className={showPostBidForm}>
-                {/* <form > */}
                     <div>
                         <label>Name</label>
                         <input type='text' name='biddername' onChange={e => this.handleBidEntryDetails(e)}/>
@@ -96,7 +96,6 @@ class ProjectDetails extends Component {
                     </div>
 
                      <button onClick={(e) => this.handleSubmit(e)}>Post Bid</button>   
-                    {/* </form> */}
                 </div>
                 <ProjectContentInfo selectedProject={selectedProject} bidsList={this.props.bidsList} checkDateValidity={checkDateValidity}/>
             </div>

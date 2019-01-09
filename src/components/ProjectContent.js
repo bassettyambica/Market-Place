@@ -25,7 +25,7 @@ class ProjectContent extends Component {
 
         if (loading) { return <div className='loading-indicator'> Loading... </div> };
         const checkDateValidity = validateBidEligibility(selectedProject.projectDeadline.endDate, selectedProject.projectDeadline.endTime);
-        const disableAddBid = checkDateValidity ? '' : 'disabled-link';
+        //const disableAddBid = checkDateValidity ? '' : 'disabled-link';
 
         const projectLink = `/project/${selectedProject.projectInfo.projectID}`;
         return (
@@ -36,7 +36,7 @@ class ProjectContent extends Component {
                     </div>
 
 
-                    {/* Work on this logic to route to progect page and show bid form */}
+                    {/* Bid form Link on home page project description */}
                     {/* <div className='project-content-header-items'>
                         <Link to={projectLink} className='link-button' className={disableAddBid}>Bid Project</Link>
                     </div> */}
@@ -51,16 +51,5 @@ class ProjectContent extends Component {
     
 
 }
-
-ProjectContent.defaultProps = {
-    selectedProject: {
-        projectInfo: {
-            projectID: '',
-            projectTitle: ''
-        }
-    }
-}
-
-ProjectContent.propTypes = { selectedProject: PropTypes.object };
 
 export default ProjectContent;

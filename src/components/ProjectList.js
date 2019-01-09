@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import '../sass/ProjectList.css';
 import ProjectContent from './ProjectContent';
 
@@ -48,7 +47,7 @@ class ProjectList extends Component {
                 </div>
 
                 <div className='project-list-item-right'>
-                    <ProjectContent selectedProject={this.props.selectedProject} />
+                    <ProjectContent selectedProject={this.props.selectedProject} bidsList={this.props.bidsList}/>
                 </div>
 
             </div>

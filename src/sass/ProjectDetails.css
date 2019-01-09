@@ -9,3 +9,7 @@
 .hide-bid-form {
     display : none;
 }
+
+.disabled-bid-button {
+    background-color: #ff45006e;
+}

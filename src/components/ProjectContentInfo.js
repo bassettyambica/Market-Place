@@ -1,27 +1,8 @@
 import React, { Component } from "react";
 import "../sass/ProjectContentInfo.css";
+import { getFinalBidPrice } from '../utils/utils';
 
 class ProjectContentInfo extends Component {
-  constructor(props) {
-    super(props);
-  }
-  getFinalBidPrice = (bidsList, selectedProject) => {
-    let minPrice;
-    if (selectedProject && bidsList) {
-      bidsList &&
-        bidsList.forEach(bid => {
-          if (bid.projectID === selectedProject.projectInfo.projectID) {
-            bid.bidPosts.forEach((post, index) => {
-              let price = parseInt(post.bidPrice.split("$")[0]);
-              minPrice = index === 0 ? price : minPrice;
-              minPrice = price <= minPrice ? price : minPrice;
-            });
-          }
-        });
-    }
-
-    return minPrice;
-  };
 
   render() {
     const selectedProject = this.props ? this.props.selectedProject : {};
@@ -30,11 +11,16 @@ class ProjectContentInfo extends Component {
     const showFinalBidPrice =
       this.props && this.props.checkDateValidity
         ? "hide-final-price"
-        : "show-final-price";
+        : "show-final-price";   
+    const finalBidDetails = getFinalBidPrice(this.props.bidsList, selectedProject);
 
     return (
       <div className="project-info-display">
         <p>{selectedProject.projectInfo.projectDesc}</p>
+        <div>
+          <label className="bid-item-label"> Project Estimated Hours : </label>
+          {selectedProject.projectInfo.projectHours + ' Hrs'}
+        </div>
         <div>
           <label className="bid-item-label"> Bid End Date : </label>
           {selectedProject.projectDeadline.endDate}
@@ -46,7 +32,7 @@ class ProjectContentInfo extends Component {
         <div className={showFinalBidPrice}>
           <div>
             <label className="bid-item-label"> Final bid price : $</label>
-            {this.getFinalBidPrice(bidsList, selectedProject)}
+            {`${finalBidDetails.minPrice} by ${finalBidDetails.bidderName}`}
           </div>
         </div>
 
@@ -77,7 +63,7 @@ const BidList = ({ bid } = this.props) => {
             <div className="bid-item-info">
               <div>
                 <label className="bid-item-label">Bid Price : </label>
-                {post.bidPrice}
+                {'$'+post.bidPrice}
               </div>
               <div>
                 <label className="bid-item-label"> Bid Price Type : </label>

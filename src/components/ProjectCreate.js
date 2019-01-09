@@ -23,6 +23,8 @@ class ProjectCreate extends Component {
                 break;
             case 'projectendtime': projectDetails.endTime = e.target.value;
                 break;
+            case 'projecthours': projectDetails.projectHours = e.target.value;
+                break;    
             default: return;
         }
     }
@@ -41,7 +43,7 @@ class ProjectCreate extends Component {
         let errors = {};
         let formIsValid = true;
 
-        if (!projectDetails.projectTitle || !projectDetails.endDate || !projectDetails.endTime || !projectDetails.projectDesc) {
+        if (!projectDetails.projectTitle || !projectDetails.endDate || !projectDetails.endTime || !projectDetails.projectDesc || !projectDetails.projectHours) {
             formIsValid = false;
             errors.fieldsError = "Please fill required details";
         }
@@ -82,6 +84,11 @@ class ProjectCreate extends Component {
                         <div>
                             <label>Project End Time</label>
                             <input type="time" name='projectendtime' onChange={e => this.handleEntryDetails(e)} className={validateField} />
+                        </div>
+
+                        <div>
+                            <label>Est Project Hours </label>
+                            <input type="text" name='projecthours' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
 

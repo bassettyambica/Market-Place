@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Georgia, serif;
   height : 100%;
   text-align: justify;
 }
@@ -57,6 +57,14 @@ html {
     margin: 4px 2px;
     cursor: pointer;
     border-radius : 4px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li{
+    padding-left : 4px;
   }
 
   /* @media (min-width: 400px) {
