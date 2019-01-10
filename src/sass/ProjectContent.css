@@ -1,5 +1,7 @@
 .project-content{
     margin : 20px;
+    height: 90vh;
+    overflow: scroll;
 }
 
 .project-content-header {

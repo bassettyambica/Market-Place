@@ -4,6 +4,7 @@ body {
   font-family: Georgia, serif;
   height : 100%;
   text-align: justify;
+  background: #eaeaea;
 }
 
 html {
@@ -44,6 +45,7 @@ textarea {
   height: 150px;
   border: 1px solid #ccc;
   border-radius: 4px; 
+  margin-left : 5px;
 }
 
 
