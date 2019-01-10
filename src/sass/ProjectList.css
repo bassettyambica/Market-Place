@@ -61,6 +61,18 @@
     background-color : #e7e7e7;
 }
 
+.pagination-list {
+    display: inline-block;
+}
+
+
+.pagination-items {
+  cursor: pointer;  
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
 
 @media (min-width: 700px) {
     .project-list {

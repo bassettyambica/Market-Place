@@ -10,8 +10,7 @@
 }
 
 .disabled-link{
-    pointer-events: none;
-    color : red;
+    background-color: red
 }
 
 .post-new-project {

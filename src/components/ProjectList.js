@@ -5,6 +5,15 @@ import ProjectContent from './ProjectContent';
 
 class ProjectList extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            paginationArray : [],
+            displayProjectsCount : 20,
+            slicedProjects : []
+        }
+    }
+
     static get defaultProps() {
         return {
             selectedProject: {
@@ -17,6 +26,34 @@ class ProjectList extends Component {
 
     componentDidMount = () => {
         this.props.fetchProject(this.props.projects[0].projectInfo.projectID);
+        let numberOfPagesToShow = Math.ceil(this.props.projects.length / this.state.displayProjectsCount); 
+        let paginationArray = Array.from(Array(numberOfPagesToShow).keys());
+        let slicedProjects = this.props.projects.slice(0, this.state.displayProjectsCount)
+        this.setState({ paginationArray , slicedProjects });
+        
+    }
+
+    handlePageChange = pageIndex => {
+        const { displayProjectsCount, paginationArray } = this.state;
+        let newIndex = Math.abs(pageIndex - 1) * displayProjectsCount;
+        let slicedProjects = this.props.projects.slice(newIndex, newIndex + displayProjectsCount)
+        this.setState({ slicedProjects });
+    }
+
+    renderProjectsForDisplay = (slicedProjects, selectProjectID) => {
+
+        return slicedProjects.length && slicedProjects.map(project => {
+            let selectedProjectClassName = (project.projectInfo.projectID === selectProjectID) ? 'project-list-item selected-project' : 'project-list-item';
+            return (
+                <li key={project.projectInfo.projectID}
+                    className={selectedProjectClassName}
+                    onClick={() => this.handleFetchProject(project.projectInfo.projectID)}
+                >
+                    {project.projectInfo.projectTitle}
+                </li>
+            );
+        });
+        
     }
 
     handleFetchProject = (projectID) => {
@@ -25,6 +62,7 @@ class ProjectList extends Component {
 
     render() {
         const selectProjectID = this.props.selectedProject.projectInfo.projectID;
+        const { paginationArray } = this.state;
 
         return (
             <div className='project-list-container'>
@@ -33,18 +71,16 @@ class ProjectList extends Component {
                 <div className='project-list'>
                 <div className='project-list-item-left'>
                     <ul className="project-list-items">
-                        {this.props.projects && this.props.projects.map((project) => {
-                            let selectedProjectClassName = (project.projectInfo.projectID === selectProjectID) ? 'project-list-item selected-project' : 'project-list-item';
+                        {this.renderProjectsForDisplay(this.state.slicedProjects, selectProjectID)}
+                    </ul>
+
+                    <div className="pagination-list">
+                        {paginationArray.map(page => {
                             return (
-                                <li key={project.projectInfo.projectID}
-                                    className={selectedProjectClassName}
-                                    onClick={() => this.handleFetchProject(project.projectInfo.projectID)}
-                                >
-                                    {project.projectInfo.projectTitle}
-                                </li>
+                                <span className='pagination-items' key={page} onClick={() => this.handlePageChange(page + 1) }>{page + 1}</span>
                             )
                         })}
-                    </ul>
+                    </div>
                 </div>
 
                 <div className='project-list-item-right'>
