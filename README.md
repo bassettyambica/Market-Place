@@ -29,10 +29,11 @@ npm install
 To start the project run
 
 ```
-npm run dev
+npm start
 ```
 
 To run test
+Test environment setup instructions followed from https://medium.com/@compatt84/how-to-setup-unit-tests-with-create-react-app-mocha-and-visual-studio-code-mocha-side-bar-eb4f75d8de5a
 
 ```
 npm test

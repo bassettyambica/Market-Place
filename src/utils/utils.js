@@ -88,7 +88,6 @@ export function getFinalBidPrice(bidsList, selectedProject) {
 
 export function validateInputFields(type, val) {
     let error = '', reGex;
-    console.log('val, type =>',  type)
     switch (type) {
         case 'numeric':
             reGex = new RegExp(/^\d+$/);

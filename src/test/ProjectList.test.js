@@ -30,7 +30,6 @@ describe('ProjectList testing', function(){
             </TestProvider>
         );
 
-        console.log("wrapper", wrapper.debug());
         expect(wrapper.find('.project-list-item').length).to.equal(10);
         expect(wrapper.find('Link').getElements()[0].props.to).to.equal('/project/new');
         expect(wrapper.find('Link').getElements()[1].props.to).to.equal('/project/1');
