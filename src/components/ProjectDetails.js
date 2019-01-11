@@ -123,17 +123,17 @@ class ProjectDetails extends Component {
                             )
                         })}
                     </div>
-                    <div>
+                    <div className='item'>
                         <label>Name</label>
                         <input type='text' name='biddername' onChange={e => this.handleBidEntryDetails(e)}/>
                     </div>
 
-                    <div>
+                    <div className='item'>
                         <label>Contact</label>
                         <input type='text' name='biddercontact' onChange={e => this.handleBidEntryDetails(e)}/>
                     </div>
 
-                    <div>
+                    <div className='item'>
                         <label>Price type</label>
                         <select onChange={e => this.handlePriceTypeChange(e)} value={this.state.priceType} name='bidpricetype'>
                             <option value="hourly" >Hourly</option>
@@ -141,8 +141,8 @@ class ProjectDetails extends Component {
                         </select>
                     </div>
 
-                    <div>
-                        <label>Bid Amout in $</label>
+                    <div className='item'>
+                        <label>Bid Amout($)</label>
                         <input type='text' name='bidprice' onChange={e => this.handleBidEntryDetails(e)}/>
                     </div>
 

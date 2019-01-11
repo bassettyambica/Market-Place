@@ -82,7 +82,7 @@ class ProjectCreate extends Component {
             <div className='project-create-page'>
             <div className='project-create-content'>
                 <Link className='link-button' to="/">Back</Link>
-                <h1>Add New Project</h1>
+                <h1 className='create-title'>Add New Project</h1>
                 <div className='fields-error'>
                     {Object.keys(errors).map((error, ind) => {
                         return (
@@ -94,28 +94,28 @@ class ProjectCreate extends Component {
                 <div className='post-new-project-container'>
                     <div className='post-new-project'>
 
-                        <div>
-                            <label>Project Title</label>
+                        <div className='item'>
+                            <label>Title</label>
                             <input type="text" name='projecttitle' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div>
-                            <label>Project Desc</label>
+                        <div className='item'>
+                            <label>Description</label>
                             <textarea name='projectdesc' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div>
-                            <label>Project End Date</label>
+                        <div className='item'>
+                            <label>End Date</label>
                             <input type="date" name='projectenddate' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div>
-                            <label>Project End Time</label>
+                        <div className='item'>
+                            <label>End Time</label>
                             <input type="time" name='projectendtime' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 
-                        <div>
-                            <label>Est Project Hours </label>
+                        <div className='item' >
+                            <label>Estimated Hours </label>
                             <input type="text" name='projecthours' onChange={e => this.handleEntryDetails(e)} className={validateField} />
                         </div>
 

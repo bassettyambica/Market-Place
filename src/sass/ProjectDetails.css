@@ -47,3 +47,9 @@
   width: 40%; 
   background: #fff
 }
+
+.bid-modal-content .item{
+    display : flex;
+    flex-direction: row;
+  }
+  

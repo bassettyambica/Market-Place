@@ -25,6 +25,7 @@ class ProjectList extends Component {
     }
 
     componentDidMount = () => {
+        //fetches the first item as selected project.
         this.props.fetchProject(this.props.projects[0].projectInfo.projectID);
         let numberOfPagesToShow = Math.ceil(this.props.projects.length / this.state.displayProjectsCount);
         let paginationArray = Array.from(Array(numberOfPagesToShow).keys());

@@ -14,6 +14,19 @@
 
 .post-new-project{
     margin : 0 auto;
+    display: flex;
+    flex-direction: column;
+    width : 80%;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.create-title {
+    text-align: center
 }
 
 .fields-error{

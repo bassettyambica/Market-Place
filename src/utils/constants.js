@@ -1,6 +1,6 @@
 import { uuidv4 } from './utils';
 
-export const projectList = [
+export const projectList1 = [
     {
         "projectInfo": {
             "projectID": "1",
@@ -139,7 +139,7 @@ export const bidsList = [
     }
 ]
 
-export const projectList_bkp = [
+export const projectList = [
     {
         "projectInfo": {
             "projectID": "1",
@@ -225,7 +225,7 @@ export const projectList_bkp = [
             "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2018-06-12",
+            "endDate": "2019-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -271,7 +271,7 @@ export const projectList_bkp = [
             "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2018-06-12",
+            "endDate": "2019-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -317,7 +317,7 @@ export const projectList_bkp = [
             "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2018-06-12",
+            "endDate": "2019-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -363,7 +363,7 @@ export const projectList_bkp = [
             "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2018-06-12",
+            "endDate": "2019-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -409,7 +409,7 @@ export const projectList_bkp = [
             "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2018-06-12",
+            "endDate": "2019-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
@@ -455,7 +455,7 @@ export const projectList_bkp = [
             "projectHours": "30"
         },
         "projectDeadline": {
-            "endDate": "2018-06-12",
+            "endDate": "2019-06-12",
             "endTime": "23:00"
         },
         "projectBids": {
