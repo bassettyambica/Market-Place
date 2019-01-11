@@ -9,7 +9,7 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case ADD_BID:
-            return Object.assign({}, state,  { bidsList: [...bidsList, addBidPostToList(action.bidDetails)] }); 
+            return Object.assign({}, state,  { bidsList: addBidPostToList(state.bidsList, action.bidDetails) }); 
         default:
             return state;
     }

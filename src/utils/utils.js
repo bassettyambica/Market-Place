@@ -1,5 +1,9 @@
-import { projectList, bidsList } from './constants';
-
+/**
+ * 
+ * @param {*} projectList 
+ * @param {*} projectID 
+ * Fn : To return project from list based on ID.
+ */
 export function fetchProjectContent(projectList, projectID) {
     return projectList.filter(project => {
         return project.projectInfo.projectID === projectID;
@@ -10,6 +14,11 @@ export function uuidv4() {
     return Math.random().toString(36).substring(2);
 }
 
+/**
+ * 
+ * @param {*} projectDetails 
+ * Fn: To add new project to state.
+ */
 export function addProjectToList(projectDetails) {
     let newProject = {
         "projectInfo": {
@@ -26,11 +35,16 @@ export function addProjectToList(projectDetails) {
             "bidsCount": "0"
         }
     };
-    projectList.push(newProject);
     return newProject;
 }
 
-export function addBidPostToList(bidDetails) {
+/**
+ * 
+ * @param {*} bidsList 
+ * @param {*} bidDetails 
+ * Fn : To add a new bidpost to associated project if found. Else create a New bid in bidlist
+ */
+export function addBidPostToList(bidsList, bidDetails) {
     let newBid = {
         "bidID": uuidv4(),
         "bidderDetails": {
@@ -40,15 +54,33 @@ export function addBidPostToList(bidDetails) {
         "bidPriceType": bidDetails.bidPriceType,
         "bidPrice": bidDetails.bidPrice
     }
-    bidsList.forEach(bid => {
-        if (bid.projectID === bidDetails.projectID) {
-            bid.bidPosts.push(newBid);
-        }
+
+    let matchedProject = bidsList.filter(item => {
+        return (item.projectID === bidDetails.projectID);
     });
 
-    return newBid;
+    if (matchedProject.length > 0) {
+        matchedProject[0].bidPosts.push(newBid);
+        const newBidList = Object.assign([], bidsList, matchedProject[0]);
+        return newBidList;
+    }
+    else {
+        const newFinalBid = {
+            "projectID": bidDetails.projectID,
+            "bidPosts": [newBid]
+        }
+
+        bidsList.push(newFinalBid)
+        return bidsList
+    }
 }
 
+/**
+ * 
+ * @param {*} endDate 
+ * @param {*} endTime 
+ * Fn : To return if the input date is valid and greater than current date and time.
+ */
 export function validateBidEligibility(endDate, endTime) {
     let endDateArray = endDate.split('-');
     let endTimeArray = endTime.split(':');
@@ -59,7 +91,15 @@ export function validateBidEligibility(endDate, endTime) {
     return (currentDate <= calcDate) ? true : false;
 
 }
-// returns bid with lowest bid price (based on hourly and flat rate) from the list of bids for a project 
+
+/**
+ * 
+ * @param {*} bidsList 
+ * @param {*} selectedProject 
+ * Fn : To return a final bid price:
+ * If bid type = hourly => price * hours from selected project
+ * If bid type = fixed => return price.
+ */
 export function getFinalBidPrice(bidsList, selectedProject) {
     let minPrice = 0;
     let bidderName = '';
@@ -86,6 +126,13 @@ export function getFinalBidPrice(bidsList, selectedProject) {
     };
 };
 
+
+/**
+ * 
+ * @param {*} type 
+ * @param {*} val 
+ * Fn : To validate input fields.
+ */
 export function validateInputFields(type, val) {
     let error = '', reGex;
     switch (type) {

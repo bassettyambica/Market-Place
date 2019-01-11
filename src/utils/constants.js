@@ -1,6 +1,6 @@
 import { uuidv4 } from './utils';
 
-export const projectList1 = [
+export const projectList = [
     {
         "projectInfo": {
             "projectID": "1",
@@ -107,12 +107,39 @@ export const bidsList = [
                 },
                 "bidPriceType" : "hourly",
                 "bidPrice" : "100"
+            },
+            {
+                "bidID" : uuidv4(),
+                "bidderDetails" : {
+                    "bidderName" : "Henry Patrik",
+                    "bidderContact" : "1-463-123-4447"
+                },
+                "bidPriceType" : "fixed",
+                "bidPrice" : "1000"
+            },
+            {
+                "bidID" : uuidv4(),
+                "bidderDetails" : {
+                    "bidderName" : "Tom Tom",
+                    "bidderContact" : "1-463-123-4447"
+                },
+                "bidPriceType" : "hourly",
+                "bidPrice" : "70"
+            },
+            {
+                "bidID" : uuidv4(),
+                "bidderDetails" : {
+                    "bidderName" : "Sara Howell",
+                    "bidderContact" : "1-463-123-4447"
+                },
+                "bidPriceType" : "fixed",
+                "bidPrice" : "2500"
             }
         ]
     }
 ]
 
-export const projectList = [
+export const projectList_bkp = [
     {
         "projectInfo": {
             "projectID": "1",
@@ -121,7 +148,7 @@ export const projectList = [
             "projectHours": "50"
         },
         "projectDeadline": {
-            "endDate": "2019-10-19",
+            "endDate": "2018-10-19",
             "endTime": "23:00"
         },
         "projectBids": {

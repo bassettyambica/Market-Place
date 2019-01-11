@@ -16,8 +16,6 @@
     margin : 0 auto;
     display : flex;
     flex-wrap: wrap;
-    width : 90%;
-    height : 90%;
     padding: 3px;
     border : 1px solid grey;
 }
@@ -76,6 +74,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width : 90%;
+        height : 90%;
     }
     .project-list-item-left{
         width : 30%;

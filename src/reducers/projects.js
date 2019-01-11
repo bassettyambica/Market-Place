@@ -10,12 +10,12 @@ export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case FETCH_PROJECT:
             if (action.projectID) {
-                const selectedProject = fetchProjectContent(projectList, action.projectID);
+                const selectedProject = fetchProjectContent(state.projectList, action.projectID);
                 return Object.assign({}, state, { selectedProject: selectedProject[0] });
             }
             break;
         case ADD_PROJECT:
-             return Object.assign({}, state,  { projectList: [...projectList, addProjectToList(action.projectDetails)] }); 
+             return Object.assign({}, state,  { projectList: [...state.projectList, addProjectToList(action.projectDetails)] }); 
         default:
             return state;
     }

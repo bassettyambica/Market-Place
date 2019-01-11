@@ -21,3 +21,9 @@
     padding: 20px;
     width : 50%;
 }
+
+@media (min-width: 700px) {
+    .project-content {
+        width :80%;
+    }
+}
